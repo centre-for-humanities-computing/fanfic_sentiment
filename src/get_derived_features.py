@@ -98,6 +98,8 @@ def get_sinuosity(arc):
     Computes the sinuosity of a story arc.
     Returns a value between 0 and 1, where 1 indicates a straight line.
     """
+    arc = list(arc)
+    
     if not arc or len(arc) < 2:
         return None
 
