@@ -2,7 +2,7 @@
 
 # Sentiment Analysis for fanfic & other texts 🎭
 
-this script runs sentiment analysis on text datasets (like fanfic or whatever you have) using huggingface transformer models 🤗 plus dictionary-based tools like vader and syuzhet.
+this script runs sentiment analysis on text datasets (like fanfic or whatever you have) using huggingface transformer models 🤗 plus dictionary-based tools: **vader** and **syuzhet**.
 
 ## what it does ⚙️
 
@@ -14,7 +14,7 @@ this script runs sentiment analysis on text datasets (like fanfic or whatever yo
 - saves partial results as json files along the way so you don’t lose progress  
 - logs everything for debugging  
 
-## how to do 🚀
+## how to do it 🚀
 
 install requirements, then, in terminal:
 
@@ -32,6 +32,10 @@ python -m src.get_sent \
 
 
 ## details
+
+### VADER & SYUZHET
+- scored by default, average (compound score) per sentence of what these dictionaries give us
+
 ### SA transformer-based details
 - if any sentence is too long (i.e., exceeds model max tokens), it will be chunked into the necessary chunks and the scores returned will be an average of all chunks
 - max token length is retrieved automatically, so chunking will conform to the max token length of the model

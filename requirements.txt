@@ -9,6 +9,8 @@ nltk
 numpy
 rpy2
 datetime
-
+matplotlib
+seaborn
+scikit-learn
 # Ensure spaCy English model is installed post-install
 # You can automate this in setup by running: python -m spacy download en_core_web_sm
