@@ -13,11 +13,21 @@ print(colnames(df))
 colnames(df) <- gsub("-", "_", colnames(df))
 print(colnames(df))
 # %%
+# data pre-processing
+df <-  df %>% 
+  mutate(words_scaled = scale(words),
+         subset = as.factor(subset),
+         subset = fct_relvel(subset, c("other", "angst", "fluff", "hurt/comfort"))) # change to the actual labels in the data
+
+# %%
 # we want to know, is there a difference in sentiment between the two groups, fluff and angst? Categories in "subset"
 sentiment_col <- "mean_sent_twitter_xlm_roberta_base_sentiment_multilingual" #"mean_sent_syuzhet" #
 
 # fit the model with author as a random effect
 model <- lmerTest::lmer(as.formula(paste(sentiment_col, "~ subset + (1 | author)")), data = df)
+
+# suggested model: interaction between genre and fandom, plus contorlling for time and length, and random effect for author
+# model <- lmerTest::lmer(mean_sent_syuzhet ~ subset*fandom_label + published + words_scaled + (1|author), data=df)
 # print the summary of the model
 summary(model)
 
