@@ -1,6 +1,6 @@
 # %%
-library(tidyverse, lme4, lmerTest)
-
+#library(tidyverse, lme4, lmerTest)
+pacman::p_load(tidyverse, lme4, lmerTest)
 # %%
 # load our csv
 df <- read_csv("data/merged_sentiment_data.csv")
