@@ -15,9 +15,9 @@ print(colnames(df))
 # %%
 # data pre-processing
 df <-  df %>% 
-  mutate(words_scaled = scale(words),
-         subset = as.factor(subset),
-         subset = fct_relvel(subset, c("other", "angst", "fluff", "hurt/comfort"))) # change to the actual labels in the data
+  mutate(words_scaled = scale(words), # sclae word count for better model robustness
+         subset = as.factor(subset), # change the levels of the genres for other to be baseline
+         subset = fct_relvel(subset, c("other", "angst", "fluff", "hurt/comfort"))) # change this list to be the actual labels in the data
 
 # %%
 # we want to know, is there a difference in sentiment between the two groups, fluff and angst? Categories in "subset"
@@ -27,7 +27,9 @@ sentiment_col <- "mean_sent_twitter_xlm_roberta_base_sentiment_multilingual" #"m
 model <- lmerTest::lmer(as.formula(paste(sentiment_col, "~ subset + (1 | author)")), data = df)
 
 # suggested model: interaction between genre and fandom, plus contorlling for time and length, and random effect for author
+# in other words: do different fandoms have different ways of writing the three genres compared to baseline? 
 # model <- lmerTest::lmer(mean_sent_syuzhet ~ subset*fandom_label + published + words_scaled + (1|author), data=df)
+
 # print the summary of the model
 summary(model)
 
