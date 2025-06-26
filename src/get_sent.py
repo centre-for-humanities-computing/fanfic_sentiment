@@ -49,7 +49,9 @@ def main(
 ):
     timestamp = datetime.now()
     output_dir.mkdir(parents=True, exist_ok=True)
-    output_jsons_partial = output_dir / "partial_results"
+    dataset_name_save = Path(dataset_name).stem
+    # make output folder for partial results
+    output_jsons_partial = output_dir / "partial_results" / dataset_name_save
     output_jsons_partial.mkdir(parents=True, exist_ok=True)
     logger.info(f"==== Starting sentiment analysis at {timestamp} ====")
     logger.info(f"Model names: {model_names}")
@@ -60,6 +62,7 @@ def main(
 
     # load data
     df = pd.read_csv(dataset_name)
+    logger.info(f"Loaded dataset: {dataset_name_save} with {len(df)} rows")
 
     # take only the first n_rows if specified
     if n_rows:
@@ -139,20 +142,20 @@ def main(
 
         # Save every 100 rows
         if i % 100 == 0 and i > 0:
-            json_path = output_jsons_partial / f"partial_results_{i}_{timestamp.strftime('%Y%m%d_%H%M%S')}.json"
+            json_path = output_jsons_partial / f"partial_results_{dataset_name_save}_{i}_{timestamp.strftime('%Y%m%d_%H%M%S')}.json"
             with open(json_path, "w", encoding="utf-8") as f:
                 json.dump(partial_results, f, indent=2, ensure_ascii=False)
             logger.info(f"Saved partial results to {json_path}")
             partial_results = []  # clear for next chunk
 
     if partial_results:
-        json_path = output_dir / f"partial_results_final_{timestamp.strftime('%Y%m%d_%H%M%S')}.json"
+        json_path = output_jsons_partial / f"partial_results_final_{dataset_name_save}_{timestamp.strftime('%Y%m%d_%H%M%S')}.json"
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(partial_results, f, indent=2, ensure_ascii=False)
         logger.info(f"Saved final partial results to {json_path}")
 
-    logger.info(f"Results saved to DIR: {output_dir}")
-    print(f"\nSaved results to {output_dir}")
+    logger.info(f"Results saved to DIR: {output_jsons_partial}")
+    print(f"\nSaved results to {output_jsons_partial}")
     logger.info(f"time elapsed: {datetime.now() - timestamp}")
 
 if __name__ == "__main__":

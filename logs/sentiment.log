@@ -223,3 +223,41 @@
 2025-06-19T10:13:12.407748+0200 Saved final partial results to results/partial_results_final_20250618_145036.json
 2025-06-19T10:13:12.408333+0200 Results saved to DIR: results
 2025-06-19T10:13:12.408407+0200 time elapsed: 19:22:36.381605
+2025-06-26T09:50:18.927116+0200 ==== Starting sentiment analysis at 2025-06-26 09:50:18.927092 ====
+2025-06-26T09:50:18.928090+0200 Model names: ['cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual']
+2025-06-26T09:50:18.928142+0200 Dataset name: data/9000_fics.csv
+2025-06-26T09:50:18.928181+0200 Limiting to first 5 rows
+2025-06-26T09:50:25.160016+0200 Skipping 5096 already-processed texts.
+2025-06-26T09:54:14.848211+0200 ==== Starting sentiment analysis at 2025-06-26 09:54:14.848184 ====
+2025-06-26T09:54:14.849627+0200 Model names: ['cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual']
+2025-06-26T09:54:14.849683+0200 Dataset name: data/9000_fics.csv
+2025-06-26T09:54:14.849721+0200 Limiting to first 5 rows
+2025-06-26T09:54:18.668829+0200 Loaded dataset: 9000_fics with 8998 rows
+2025-06-26T09:54:18.696058+0200 Skipping 0 already-processed texts.
+2025-06-26T09:55:10.418313+0200 Saved final partial results to results/partial_results_final_9000_fics_20250626_095414.json
+2025-06-26T09:55:10.418740+0200 Results saved to DIR: results
+2025-06-26T09:55:10.418811+0200 time elapsed: 0:00:55.570621
+2025-06-26T09:55:39.844133+0200 ==== Starting sentiment analysis at 2025-06-26 09:55:39.843599 ====
+2025-06-26T09:55:39.844290+0200 Model names: ['cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual']
+2025-06-26T09:55:39.844331+0200 Dataset name: data/9000_fics.csv
+2025-06-26T09:55:39.844367+0200 Limiting to first 5 rows
+2025-06-26T09:55:43.506499+0200 Loaded dataset: 9000_fics with 8998 rows
+2025-06-26T09:55:43.535422+0200 Skipping 0 already-processed texts.
+2025-06-26T09:56:34.262076+0200 Saved final partial results to results/partial_results_final_9000_fics_20250626_095539.json
+2025-06-26T09:56:34.262479+0200 Results saved to DIR: results
+2025-06-26T09:56:34.262550+0200 time elapsed: 0:00:54.418945
+2025-06-26T09:57:35.759807+0200 ==== Starting sentiment analysis at 2025-06-26 09:57:35.759524 ====
+2025-06-26T09:57:35.760108+0200 Model names: ['cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual']
+2025-06-26T09:57:35.760145+0200 Dataset name: data/9000_fics.csv
+2025-06-26T09:57:35.760177+0200 Limiting to first 5 rows
+2025-06-26T09:57:39.681321+0200 Loaded dataset: 9000_fics with 8998 rows
+2025-06-26T09:57:39.710115+0200 Skipping 0 already-processed texts.
+2025-06-26T09:58:30.494882+0200 Saved final partial results to results/partial_results/9000_fics/partial_results_final_9000_fics_20250626_095735.json
+2025-06-26T09:58:30.495318+0200 Results saved to DIR: results
+2025-06-26T09:58:30.495369+0200 time elapsed: 0:00:54.735841
+2025-06-26T09:58:57.093549+0200 ==== Starting sentiment analysis at 2025-06-26 09:58:57.093515 ====
+2025-06-26T09:58:57.093962+0200 Model names: ['cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual']
+2025-06-26T09:58:57.094015+0200 Dataset name: data/9000_fics.csv
+2025-06-26T09:58:57.094053+0200 No row limit specified
+2025-06-26T09:59:00.967998+0200 Loaded dataset: 9000_fics with 8998 rows
+2025-06-26T09:59:26.697114+0200 Skipping 0 already-processed texts.
