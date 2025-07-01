@@ -23,8 +23,14 @@ def get_basic_sentarc_features(arc: list[float]):
 def integrate(x: list[float]) -> np.matrix:
     return np.mat(np.cumsum(x) - np.mean(x))
 
+
+# from fabula-pipeline
 def get_hurst(arc: list[float]):
-    y = integrate(arc)
+    arc = [float(x) for x in arc]
+
+    y = integrate(arc) 
+    #y = np.mat(arc)
+
     uneven = y.shape[1] % 2
     if uneven:
         y = y[0, :-1]
@@ -39,7 +45,6 @@ def get_hurst(arc: list[float]):
 
     hurst = round(np.polyfit(x, y, 1)[0], 2)
     return hurst
-
 
 # ## ---- Detrending ---- ##
 
@@ -84,7 +89,8 @@ def detrend(story_arc):
     for i in range(1, 2):  # reduce polynomial order to 1 instead of 2
         _, trend_ww_1 = dm.detrending_method(X, w, i)
 
-    return normalize(trend_ww_1).T
+    #return normalize(trend_ww_1).T
+    return normalize(trend_ww_1).flatten().tolist()
 
 
 # SINUOSITY measure (dimensionless)

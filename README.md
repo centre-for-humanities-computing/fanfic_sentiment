@@ -26,8 +26,9 @@ install requirements, then, in terminal:
 ```bash
 
 python -m src.get_sent \
-    --dataset-name data/9000_fics.csv \
-    --model-names cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual \
+    --dataset-name data/MythFic_texts.csv \
+    --model-names cardiffnlp/xlm-roberta-base-sentiment-multilingual \
+    #cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual \
     --n-rows 5
 
 ```

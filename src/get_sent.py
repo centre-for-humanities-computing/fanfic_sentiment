@@ -87,6 +87,7 @@ def main(
 
     # list to store results
     partial_results = []
+    n_chunks_all = []
 
     # main processing loop
     for i, row in tqdm(df.iterrows(), total=len(df), desc="Processing rows"):
@@ -131,7 +132,9 @@ def main(
             pipe = model_pipes[model_name]
             tokenizer = model_tokenizers[model_name]
             try:
-                scores = get_sentiment(sentences, text_id=text_id, pipe=pipe, tokenizer=tokenizer)
+                scores, n_chunks = get_sentiment(sentences, text_id=text_id, pipe=pipe, tokenizer=tokenizer)
+                # extend n_chunks_all
+                n_chunks_all.extend(n_chunks)
             except Exception as e:
                 logger.warning(f"Error in model {model_name} for text_id {text_id}. Error: {e}")
                 scores = [None] * len(sentences)
@@ -153,6 +156,16 @@ def main(
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(partial_results, f, indent=2, ensure_ascii=False)
         logger.info(f"Saved final partial results to {json_path}")
+
+    # log all the n_chunks
+    if n_chunks_all:
+        logger.info(f"Total number of chunks processed: {len(n_chunks_all)}")
+        logger.info(f"Average number of chunks per sentence: {sum(n_chunks_all) / len(n_chunks_all):.2f}")
+        # how many were 1 chunk, 2 chunks, etc.
+        chunk_counts = pd.Series(n_chunks_all).value_counts().sort_index()
+        logger.info("Chunk counts per sentence:")
+        for count, freq in chunk_counts.items():
+            logger.info(f"{count} chunks: {freq} sentences")
 
     logger.info(f"Results saved to DIR: {output_jsons_partial}")
     print(f"\nSaved results to {output_jsons_partial}")

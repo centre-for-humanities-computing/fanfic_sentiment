@@ -261,3 +261,266 @@
 2025-06-26T09:58:57.094053+0200 No row limit specified
 2025-06-26T09:59:00.967998+0200 Loaded dataset: 9000_fics with 8998 rows
 2025-06-26T09:59:26.697114+0200 Skipping 0 already-processed texts.
+2025-06-26T10:19:28.492870+0200 ==== Starting sentiment analysis at 2025-06-26 10:19:28.492816 ====
+2025-06-26T10:19:28.493415+0200 Model names: ['cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual']
+2025-06-26T10:19:28.493470+0200 Dataset name: data/9000_fics.csv
+2025-06-26T10:19:28.493506+0200 No row limit specified
+2025-06-26T10:19:32.239133+0200 Loaded dataset: 9000_fics with 8998 rows
+2025-06-26T10:19:58.448285+0200 Skipping 0 already-processed texts.
+2025-06-26T12:13:02.691948+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_100_20250626_101928.json
+2025-06-26T12:37:57.033240+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_200_20250626_101928.json
+2025-06-26T13:19:32.007991+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_300_20250626_101928.json
+2025-06-26T13:50:21.849737+0200 ==== Starting sentiment analysis at 2025-06-26 13:50:21.849696 ====
+2025-06-26T13:50:21.850926+0200 Model names: ['cardiffnlp/xlm-roberta-base-sentiment-multilingual']
+2025-06-26T13:50:21.850969+0200 Dataset name: data/9000_fics.csv
+2025-06-26T13:50:21.850999+0200 No row limit specified
+2025-06-26T13:50:26.752542+0200 Loaded dataset: 9000_fics with 8998 rows
+2025-06-26T13:50:54.203984+0200 Skipping 0 already-processed texts.
+2025-06-26T18:12:16.310028+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_100_20250626_135021.json
+2025-06-26T21:05:33.025564+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_200_20250626_135021.json
+2025-06-27T09:49:57.405586+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_300_20250626_135021.json
+2025-06-27T10:19:58.184720+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_400_20250626_135021.json
+2025-06-27T11:52:35.285164+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_500_20250626_135021.json
+2025-06-27T19:38:14.033155+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_600_20250626_135021.json
+2025-06-27T19:58:12.038546+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_700_20250626_135021.json
+2025-06-27T20:31:12.175390+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_800_20250626_135021.json
+2025-06-27T22:09:43.513153+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_900_20250626_135021.json
+2025-06-27T22:32:38.848784+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1000_20250626_135021.json
+2025-06-27T23:07:29.619859+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1100_20250626_135021.json
+2025-06-27T23:29:29.958571+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1200_20250626_135021.json
+2025-06-28T07:45:44.756769+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1300_20250626_135021.json
+2025-06-28T10:23:15.092434+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1400_20250626_135021.json
+2025-06-28T10:53:46.369135+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1500_20250626_135021.json
+2025-06-28T16:52:01.517546+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1600_20250626_135021.json
+2025-06-28T17:11:48.719641+0200 Skipping text_id 32402338 due to excessive length (2154928 chars).
+2025-06-28T17:22:48.832385+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1700_20250626_135021.json
+2025-06-28T17:58:51.160172+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1800_20250626_135021.json
+2025-06-28T18:33:44.220520+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_1900_20250626_135021.json
+2025-06-28T19:00:49.420833+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2000_20250626_135021.json
+2025-06-28T19:14:13.238085+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2100_20250626_135021.json
+2025-06-28T19:55:18.645183+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2200_20250626_135021.json
+2025-06-28T19:57:22.116747+0200 Skipping text_id 716010 due to excessive length (2050471 chars).
+2025-06-28T20:33:51.123652+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2300_20250626_135021.json
+2025-06-28T21:08:56.348498+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2400_20250626_135021.json
+2025-06-28T21:48:18.048873+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2500_20250626_135021.json
+2025-06-28T22:16:35.324466+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2600_20250626_135021.json
+2025-06-28T22:49:20.537138+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2700_20250626_135021.json
+2025-06-28T23:06:05.116922+0200 Skipping text_id 24720655 due to excessive length (2182939 chars).
+2025-06-28T23:15:54.591277+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2800_20250626_135021.json
+2025-06-28T23:33:51.270187+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_2900_20250626_135021.json
+2025-06-29T09:46:09.944589+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3000_20250626_135021.json
+2025-06-29T10:06:59.387372+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3100_20250626_135021.json
+2025-06-29T11:13:19.733161+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3200_20250626_135021.json
+2025-06-29T12:11:46.625461+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3300_20250626_135021.json
+2025-06-29T12:32:32.175324+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3400_20250626_135021.json
+2025-06-29T13:04:56.304432+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3500_20250626_135021.json
+2025-06-29T13:29:27.819836+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3600_20250626_135021.json
+2025-06-29T13:49:52.981579+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3700_20250626_135021.json
+2025-06-29T14:09:25.976280+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3800_20250626_135021.json
+2025-06-29T14:53:42.427367+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_3900_20250626_135021.json
+2025-06-29T15:13:56.951823+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4000_20250626_135021.json
+2025-06-29T16:03:15.209675+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4100_20250626_135021.json
+2025-06-29T16:26:37.546523+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4200_20250626_135021.json
+2025-06-29T16:57:42.605945+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4300_20250626_135021.json
+2025-06-29T17:26:55.688365+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4400_20250626_135021.json
+2025-06-29T19:26:50.256218+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4500_20250626_135021.json
+2025-06-29T19:43:21.842748+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4600_20250626_135021.json
+2025-06-29T20:49:21.956016+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4700_20250626_135021.json
+2025-06-29T21:08:17.810904+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4800_20250626_135021.json
+2025-06-29T21:32:14.975557+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_4900_20250626_135021.json
+2025-06-29T21:58:33.820036+0200 Skipping text_id 10184531 due to excessive length (2193705 chars).
+2025-06-29T22:21:00.686083+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5000_20250626_135021.json
+2025-06-29T22:47:06.896467+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5100_20250626_135021.json
+2025-06-29T23:20:58.863938+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5200_20250626_135021.json
+2025-06-29T23:43:23.481079+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5300_20250626_135021.json
+2025-06-30T00:03:49.535136+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5400_20250626_135021.json
+2025-06-30T00:34:18.289586+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5500_20250626_135021.json
+2025-06-30T00:54:15.429082+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5600_20250626_135021.json
+2025-06-30T01:13:34.341534+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5700_20250626_135021.json
+2025-06-30T01:51:53.500104+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5800_20250626_135021.json
+2025-06-30T02:13:55.955046+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_5900_20250626_135021.json
+2025-06-30T02:14:06.124100+0200 Skipping text_id 27087217 due to excessive length (2141311 chars).
+2025-06-30T02:42:38.689285+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6000_20250626_135021.json
+2025-06-30T03:12:39.482928+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6100_20250626_135021.json
+2025-06-30T03:30:08.757399+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6200_20250626_135021.json
+2025-06-30T03:52:17.317750+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6300_20250626_135021.json
+2025-06-30T04:18:56.990587+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6400_20250626_135021.json
+2025-06-30T04:32:39.944975+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6500_20250626_135021.json
+2025-06-30T04:48:29.116239+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6600_20250626_135021.json
+2025-06-30T05:16:46.758282+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6700_20250626_135021.json
+2025-06-30T05:45:44.346671+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6800_20250626_135021.json
+2025-06-30T05:58:15.938240+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_6900_20250626_135021.json
+2025-06-30T06:22:54.617144+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7000_20250626_135021.json
+2025-06-30T06:34:05.908949+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7100_20250626_135021.json
+2025-06-30T07:07:10.956369+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7200_20250626_135021.json
+2025-06-30T07:39:37.321915+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7300_20250626_135021.json
+2025-06-30T08:05:58.951097+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7400_20250626_135021.json
+2025-06-30T08:40:34.643208+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7500_20250626_135021.json
+2025-06-30T09:08:06.302868+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7600_20250626_135021.json
+2025-06-30T09:48:32.532028+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7700_20250626_135021.json
+2025-06-30T10:07:37.858108+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7800_20250626_135021.json
+2025-06-30T11:05:54.301236+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_7900_20250626_135021.json
+2025-06-30T11:45:33.232769+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8000_20250626_135021.json
+2025-06-30T14:22:38.912676+0200 ==== Starting sentiment analysis at 2025-06-30 14:22:38.912638 ====
+2025-06-30T14:22:38.913867+0200 Model names: ['cardiffnlp/xlm-roberta-base-sentiment-multilingual']
+2025-06-30T14:22:38.913914+0200 Dataset name: data/9000_fics.csv
+2025-06-30T14:22:38.913954+0200 No row limit specified
+2025-06-30T14:22:43.841622+0200 Loaded dataset: 9000_fics with 8998 rows
+2025-06-30T14:23:14.460038+0200 Skipping 7996 already-processed texts.
+2025-06-30T14:23:17.925905+0200 Skipping text_id 32402338 due to excessive length (2154928 chars).
+2025-06-30T14:23:17.933533+0200 Skipping text_id 716010 due to excessive length (2050471 chars).
+2025-06-30T14:23:17.941471+0200 Skipping text_id 24720655 due to excessive length (2182939 chars).
+2025-06-30T14:23:17.969112+0200 Skipping text_id 10184531 due to excessive length (2193705 chars).
+2025-06-30T14:23:17.982681+0200 Skipping text_id 27087217 due to excessive length (2141311 chars).
+2025-06-30T14:38:07.920156+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8100_20250630_142238.json
+2025-06-30T14:59:32.001148+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8200_20250630_142238.json
+2025-06-30T15:24:47.007788+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8300_20250630_142238.json
+2025-06-30T15:40:47.309059+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8400_20250630_142238.json
+2025-06-30T15:51:46.060003+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8500_20250630_142238.json
+2025-06-30T16:10:36.511010+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8600_20250630_142238.json
+2025-06-30T16:33:19.090066+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8700_20250630_142238.json
+2025-06-30T16:59:16.300879+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8800_20250630_142238.json
+2025-06-30T17:14:13.391420+0200 Saved partial results to results/partial_results/9000_fics/partial_results_9000_fics_8900_20250630_142238.json
+2025-06-30T17:39:48.448423+0200 Saved final partial results to results/partial_results/9000_fics/partial_results_final_9000_fics_20250630_142238.json
+2025-06-30T17:39:48.450085+0200 Total number of chunks processed: 756317
+2025-06-30T17:39:48.452266+0200 Average number of chunks per sentence: 1.00
+2025-06-30T17:39:48.552937+0200 Chunk counts per sentence:
+2025-06-30T17:39:48.553312+0200 1 chunks: 756276 sentences
+2025-06-30T17:39:48.553345+0200 2 chunks: 39 sentences
+2025-06-30T17:39:48.553370+0200 3 chunks: 1 sentences
+2025-06-30T17:39:48.553394+0200 4 chunks: 1 sentences
+2025-06-30T17:39:48.553417+0200 Results saved to DIR: results/partial_results/9000_fics
+2025-06-30T17:39:48.553446+0200 time elapsed: 3:17:09.640803
+2025-06-30T18:10:04.519528+0200 ==== Starting sentiment analysis at 2025-06-30 18:10:04.518595 ====
+2025-06-30T18:10:04.521158+0200 Model names: ['cardiffnlp/xlm-roberta-base-sentiment-multilingual']
+2025-06-30T18:10:04.521195+0200 Dataset name: data/MythFic_texts.csv
+2025-06-30T18:10:04.521228+0200 No row limit specified
+2025-06-30T18:10:06.761682+0200 Loaded dataset: MythFic_texts with 5154 rows
+2025-06-30T18:10:14.164219+0200 Skipping 0 already-processed texts.
+2025-06-30T18:24:09.281506+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_100_20250630_181004.json
+2025-06-30T18:36:07.362003+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_200_20250630_181004.json
+2025-06-30T18:36:52.269889+0200 Skipping empty or invalid text_id 41875431 due to empty text after stripping
+2025-06-30T18:48:48.886570+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_300_20250630_181004.json
+2025-06-30T18:49:52.487606+0200 Skipping empty or invalid text_id 38554689 due to empty text after stripping
+2025-06-30T18:50:52.106061+0200 Skipping empty or invalid text_id 40377192 due to empty text after stripping
+2025-06-30T18:56:18.826184+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_400_20250630_181004.json
+2025-06-30T18:57:10.516581+0200 Skipping empty or invalid text_id 40005351 due to empty text after stripping
+2025-06-30T19:07:19.298063+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_500_20250630_181004.json
+2025-06-30T19:08:03.252738+0200 Skipping empty or invalid text_id 39408366 due to empty text after stripping
+2025-06-30T19:13:37.509308+0200 Skipping empty or invalid text_id 39003558 due to empty text after stripping
+2025-06-30T19:14:13.993130+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_600_20250630_181004.json
+2025-06-30T19:16:26.077063+0200 Skipping empty or invalid text_id 38765025 due to empty text after stripping
+2025-06-30T19:16:26.077852+0200 Skipping empty or invalid text_id 38764800 due to empty text after stripping
+2025-06-30T19:16:26.077921+0200 Skipping empty or invalid text_id 38764515 due to empty text after stripping
+2025-06-30T19:16:28.058263+0200 Skipping empty or invalid text_id 38763462 due to empty text after stripping
+2025-06-30T19:24:57.614439+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_700_20250630_181004.json
+2025-06-30T19:35:58.586235+0200 Skipping empty or invalid text_id 37758970 due to empty text after stripping
+2025-06-30T19:41:45.745894+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_800_20250630_181004.json
+2025-06-30T19:43:00.370287+0200 Skipping text_id 37237438 due to excessive length (10832269 chars).
+2025-06-30T19:50:11.581399+0200 Skipping text_id 36906481 due to excessive length (4875065 chars).
+2025-06-30T19:52:44.931934+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_900_20250630_181004.json
+2025-06-30T19:55:02.481728+0200 Skipping empty or invalid text_id 36724717 due to empty text after stripping
+2025-06-30T19:59:56.292077+0200 Skipping empty or invalid text_id 36368062 due to empty text after stripping
+2025-06-30T20:00:13.383453+0200 Skipping empty or invalid text_id 36357004 due to empty text after stripping
+2025-06-30T20:06:17.142500+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1000_20250630_181004.json
+2025-06-30T20:08:48.529882+0200 Skipping empty or invalid text_id 35786500 due to empty text after stripping
+2025-06-30T20:28:08.470407+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1100_20250630_181004.json
+2025-06-30T20:36:13.104022+0200 Skipping empty or invalid text_id 34703176 due to empty text after stripping
+2025-06-30T20:37:53.256740+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1200_20250630_181004.json
+2025-06-30T20:43:00.141453+0200 Skipping empty or invalid text_id 34399414 due to empty text after stripping
+2025-06-30T21:04:33.392223+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1300_20250630_181004.json
+2025-06-30T21:12:00.230731+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1400_20250630_181004.json
+2025-06-30T21:12:15.064402+0200 Skipping empty or invalid text_id 33037492 due to empty text after stripping
+2025-06-30T21:15:21.159197+0200 Skipping empty or invalid text_id 32794729 due to empty text after stripping
+2025-06-30T21:15:21.160614+0200 Skipping empty or invalid text_id 32794594 due to empty text after stripping
+2025-06-30T21:19:44.964897+0200 Skipping empty or invalid text_id 32624959 due to empty text after stripping
+2025-06-30T21:22:04.620452+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1500_20250630_181004.json
+2025-06-30T21:24:09.976396+0200 Skipping empty or invalid text_id 32179825 due to empty text after stripping
+2025-06-30T21:29:43.630892+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1600_20250630_181004.json
+2025-06-30T21:53:39.111751+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1700_20250630_181004.json
+2025-06-30T21:54:59.086004+0200 Skipping empty or invalid text_id 30700715 due to empty text after stripping
+2025-06-30T22:03:28.427271+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1800_20250630_181004.json
+2025-06-30T22:07:15.817563+0200 Skipping empty or invalid text_id 29865399 due to empty text after stripping
+2025-06-30T22:07:15.819228+0200 Skipping empty or invalid text_id 29865228 due to empty text after stripping
+2025-06-30T22:07:15.819316+0200 Skipping empty or invalid text_id 29864955 due to empty text after stripping
+2025-06-30T22:10:13.444449+0200 Skipping empty or invalid text_id 29689050 due to empty text after stripping
+2025-06-30T22:11:55.867887+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_1900_20250630_181004.json
+2025-06-30T22:12:08.956604+0200 Skipping empty or invalid text_id 29131347 due to empty text after stripping
+2025-06-30T22:16:27.521815+0200 Skipping empty or invalid text_id 28795044 due to empty text after stripping
+2025-06-30T22:19:48.317279+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2000_20250630_181004.json
+2025-06-30T22:23:18.802941+0200 Skipping empty or invalid text_id 28379850 due to empty text after stripping
+2025-06-30T22:24:08.692818+0200 Skipping empty or invalid text_id 28296126 due to empty text after stripping
+2025-06-30T22:32:50.085750+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2100_20250630_181004.json
+2025-06-30T22:41:33.334011+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2200_20250630_181004.json
+2025-06-30T22:49:18.349567+0200 Skipping empty or invalid text_id 26219479 due to empty text after stripping
+2025-06-30T22:50:38.040869+0200 Skipping empty or invalid text_id 26087566 due to empty text after stripping
+2025-06-30T22:50:48.656679+0200 Skipping empty or invalid text_id 26054674 due to empty text after stripping
+2025-06-30T22:51:48.575166+0200 Skipping empty or invalid text_id 25655155 due to empty text after stripping
+2025-06-30T22:51:48.576879+0200 Skipping empty or invalid text_id 25461109 due to empty text after stripping
+2025-06-30T22:52:46.338001+0200 Skipping empty or invalid text_id 25734268 due to empty text after stripping
+2025-06-30T22:52:53.827451+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2300_20250630_181004.json
+2025-06-30T23:47:45.505354+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2400_20250630_181004.json
+2025-06-30T23:58:50.162402+0200 Skipping empty or invalid text_id 23244109 due to empty text after stripping
+2025-07-01T00:02:49.952452+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2500_20250630_181004.json
+2025-07-01T00:20:51.899603+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2600_20250630_181004.json
+2025-07-01T00:29:42.020126+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2700_20250630_181004.json
+2025-07-01T00:30:25.391484+0200 Skipping empty or invalid text_id 22236544 due to empty text after stripping
+2025-07-01T00:40:29.526494+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2800_20250630_181004.json
+2025-07-01T00:50:01.527603+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_2900_20250630_181004.json
+2025-07-01T00:52:42.851671+0200 Skipping empty or invalid text_id 20391511 due to empty text after stripping
+2025-07-01T00:55:08.803064+0200 Skipping empty or invalid text_id 20088067 due to empty text after stripping
+2025-07-01T00:56:11.757729+0200 Skipping empty or invalid text_id 20017507 due to empty text after stripping
+2025-07-01T00:56:44.799211+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3000_20250630_181004.json
+2025-07-01T01:00:45.308958+0200 Skipping empty or invalid text_id 19402183 due to empty text after stripping
+2025-07-01T01:03:01.186559+0200 Skipping empty or invalid text_id 19204981 due to empty text after stripping
+2025-07-01T01:07:09.172751+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3100_20250630_181004.json
+2025-07-01T01:14:58.712713+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3200_20250630_181004.json
+2025-07-01T01:15:08.858739+0200 Skipping empty or invalid text_id 17790965 due to empty text after stripping
+2025-07-01T01:16:08.786252+0200 Skipping empty or invalid text_id 17652710 due to empty text after stripping
+2025-07-01T01:16:35.954768+0200 Skipping empty or invalid text_id 17405999 due to empty text after stripping
+2025-07-01T01:16:42.245081+0200 Skipping empty or invalid text_id 17401784 due to empty text after stripping
+2025-07-01T01:16:42.245479+0200 Skipping empty or invalid text_id 17401622 due to empty text after stripping
+2025-07-01T01:17:10.817272+0200 Skipping empty or invalid text_id 17404298 due to empty text after stripping
+2025-07-01T01:17:11.005898+0200 Skipping empty or invalid text_id 17388155 due to empty text after stripping
+2025-07-01T01:17:11.006021+0200 Skipping empty or invalid text_id 17385485 due to empty text after stripping
+2025-07-01T01:17:11.006080+0200 Skipping empty or invalid text_id 17384555 due to empty text after stripping
+2025-07-01T01:17:11.006982+0200 Skipping empty or invalid text_id 17378282 due to empty text after stripping
+2025-07-01T01:18:15.074227+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3300_20250630_181004.json
+2025-07-01T01:22:36.822086+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3400_20250630_181004.json
+2025-07-01T01:31:00.973863+0200 Skipping empty or invalid text_id 15095507 due to empty text after stripping
+2025-07-01T01:37:48.129253+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3500_20250630_181004.json
+2025-07-01T01:48:42.091432+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3600_20250630_181004.json
+2025-07-01T02:03:44.855060+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3700_20250630_181004.json
+2025-07-01T02:08:17.655426+0200 Skipping empty or invalid text_id 11215665 due to empty text after stripping
+2025-07-01T02:11:19.282919+0200 Skipping empty or invalid text_id 10672908 due to empty text after stripping
+2025-07-01T02:15:17.489407+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3800_20250630_181004.json
+2025-07-01T02:26:52.502177+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_3900_20250630_181004.json
+2025-07-01T02:35:00.287894+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4000_20250630_181004.json
+2025-07-01T02:46:58.176918+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4100_20250630_181004.json
+2025-07-01T02:50:31.552274+0200 Skipping empty or invalid text_id 4794107 due to empty text after stripping
+2025-07-01T02:57:57.375631+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4200_20250630_181004.json
+2025-07-01T03:20:54.315574+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4300_20250630_181004.json
+2025-07-01T03:21:13.848399+0200 Skipping empty or invalid text_id 2575025 due to empty text after stripping
+2025-07-01T06:26:07.795503+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4400_20250630_181004.json
+2025-07-01T06:29:30.622748+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4500_20250630_181004.json
+2025-07-01T06:31:29.027096+0200 Skipping empty or invalid text_id 911885 due to empty text after stripping
+2025-07-01T06:32:37.358138+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4600_20250630_181004.json
+2025-07-01T06:35:45.990507+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4700_20250630_181004.json
+2025-07-01T06:40:40.533593+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4800_20250630_181004.json
+2025-07-01T06:44:05.382506+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_4900_20250630_181004.json
+2025-07-01T06:46:37.365227+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_5000_20250630_181004.json
+2025-07-01T06:51:48.736223+0200 Skipping empty or invalid text_id 1000182 due to empty text after stripping
+2025-07-01T06:52:25.294442+0200 Skipping empty or invalid text_id 1000197 due to empty text after stripping
+2025-07-01T06:54:54.154577+0200 Saved partial results to results/partial_results/MythFic_texts/partial_results_MythFic_texts_5100_20250630_181004.json
+2025-07-01T06:56:34.312204+0200 Saved final partial results to results/partial_results/MythFic_texts/partial_results_final_MythFic_texts_20250630_181004.json
+2025-07-01T06:56:34.312770+0200 Total number of chunks processed: 1966805
+2025-07-01T06:56:34.320554+0200 Average number of chunks per sentence: 1.00
+2025-07-01T06:56:34.500143+0200 Chunk counts per sentence:
+2025-07-01T06:56:34.500256+0200 1 chunks: 1966594 sentences
+2025-07-01T06:56:34.500290+0200 2 chunks: 190 sentences
+2025-07-01T06:56:34.500318+0200 3 chunks: 17 sentences
+2025-07-01T06:56:34.500344+0200 4 chunks: 2 sentences
+2025-07-01T06:56:34.500367+0200 5 chunks: 1 sentences
+2025-07-01T06:56:34.500394+0200 6 chunks: 1 sentences
+2025-07-01T06:56:34.500424+0200 Results saved to DIR: results/partial_results/MythFic_texts
+2025-07-01T06:56:34.500456+0200 time elapsed: 12:46:29.981856

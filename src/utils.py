@@ -81,7 +81,7 @@ def find_max_tokens(tokenizer):
     Determines the maximum token length for the tokenizer, ensuring it doesn't exceed a reasonable limit.
     """
     max_length = tokenizer.model_max_length
-    if max_length > 2000:  # sometimes, they set this value to ridiculously high (although not high for real), 
+    if max_length > 20000:  # sometimes, they set this value to ridiculously high (although not high for real), 
         # so we default to a max
         max_length = 512
     return max_length
@@ -128,6 +128,7 @@ def get_sentiment(sentences, text_id, pipe, tokenizer):
     #spec_labs = get_model_labels(pipe)  # labels for the model
 
     sentences_scores = []
+    n_chunks = []
 
     for sent in sentences:
         # Check that the text is a string
@@ -152,6 +153,8 @@ def get_sentiment(sentences, text_id, pipe, tokenizer):
         elif len(chunks) > 1:
             print(f"Warning: Sentence split into {len(chunks)} chunks for text: '{text_id}'.")
             logger.info(f"Sentence split into {len(chunks)} chunks for text: '{text_id}'.")
+        
+        n_chunks.append(len(chunks))  # Store the number of chunks for this sentence
 
         # Loop through the chunks and get sentiment scores for each
         sentiment_scores = []
@@ -170,7 +173,7 @@ def get_sentiment(sentences, text_id, pipe, tokenizer):
         mean_score = sum(sentiment_scores) / len(sentiment_scores)
         sentences_scores.append(mean_score)
 
-    return sentences_scores
+    return sentences_scores, n_chunks
 
 
 ## ---- Dictionary-based sentiment analysis ---- ##
