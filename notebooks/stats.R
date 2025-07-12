@@ -1,5 +1,4 @@
 # %%
-#library(tidyverse, lme4, lmerTest)
 pacman::p_load(tidyverse, lme4, lmerTest)
 # %%
 # load our csv
