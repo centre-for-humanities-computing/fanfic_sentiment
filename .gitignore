@@ -1,4 +1,4 @@
-data/
+data_mine/
 __pycache__/
 notebooks/merge.ipynb
 collect_partial_results.ipynb

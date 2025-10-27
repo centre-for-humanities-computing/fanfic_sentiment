@@ -11,11 +11,11 @@ def multi_detrending(y,step_size,q,order) :
 
 	#q = [-1 -0.1 0.1 1,2,3,4,5];
 	#step_size = 1
-	q = mat(q)
+	q = np.array([[q]])
 	len = shape(y)[1]
 	imax = int(round(log2(len)))
 	#order = 2
-	result = mat(np.zeros((shape(q)[1] + 1 , int((imax - 2)/step_size) + 1)))
+	result = np.array([np.zeros((shape(q)[1] + 1 , int((imax - 2)/step_size) + 1))])
 	k = 1
 	for i in range(1 , imax , step_size) :
 		w = int(round(2 ** i + 1))

@@ -9,9 +9,8 @@ from pathlib import Path
 
 from typing import List, Optional
 from tqdm import tqdm
-
 from src.utils import clean_whitespace, get_sentiment, get_syuzhet, get_vader, start_up_syuzhet
-
+import glob
 import spacy
 #nlp = spacy.load("en_core_web_sm")
 
@@ -21,7 +20,6 @@ nlp = spacy.load("en_core_web_sm", disable=["parser", "ner"])
 nlp.max_length = MAX_SAFE_LENGTH
 nlp.enable_pipe("senter")
 
-import glob
 
 def load_processed_ids(output_dir: Path) -> set:
     processed_ids = set()
@@ -45,11 +43,22 @@ def main(
     model_names: List[str] = typer.Option(..., help="List of HuggingFace model names"),
     dataset_name: str = typer.Option(..., help="path to CSV (must contain 'text' column)"),
     n_rows: Optional[int] = typer.Option(None, help="Limit to first N rows"),
-    output_dir: Path = typer.Option("results", help="Directory where the results CSV will be saved"),
+    output_dir: Path = typer.Option("sentiment_results", help="Directory where the results CSV will be saved"),
 ):
     timestamp = datetime.now()
+
     output_dir.mkdir(parents=True, exist_ok=True)
-    dataset_name_save = Path(dataset_name).stem
+
+    # check if csv or df
+    if dataset_name.endswith(".csv"):
+        dataset_name_save = Path(dataset_name).stem
+        # load data
+        df = pd.read_csv(dataset_name)
+        logger.info(f"Loaded dataset: {dataset_name_save} with {len(df)} rows")
+    else:
+        dataset_name_save = "custom_df"
+        df = dataset_name.copy()
+    
     # make output folder for partial results
     output_jsons_partial = output_dir / "partial_results" / dataset_name_save
     output_jsons_partial.mkdir(parents=True, exist_ok=True)
@@ -59,10 +68,6 @@ def main(
     logger.info(f"Limiting to first {n_rows} rows" if n_rows else "No row limit specified")
 
     start_up_syuzhet()
-
-    # load data
-    df = pd.read_csv(dataset_name)
-    logger.info(f"Loaded dataset: {dataset_name_save} with {len(df)} rows")
 
     # take only the first n_rows if specified
     if n_rows:
