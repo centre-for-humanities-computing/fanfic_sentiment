@@ -1,6 +1,7 @@
 from numpy import *
 import numpy as np
-import saffine.detrending_coeff as dc
+#import saffine.detrending_coeff as dc
+from . import detrending_coeff as dc
 
 # from numba import jit
 
@@ -22,17 +23,17 @@ def detrending_method(data , seg_len , fit_order) :
 		#seg_index = 1
 
 		xi = np.arange(1 + (seg_index - 1) * (seg_len - 1) , seg_index * (seg_len - 1) + 2)
-		xi_left = np.array([xi])
+		xi_left = mat(xi)
 		xi_max = xi.max()
 		xi_min = xi.min()
 		seg_data = data[xi_min - 1 : xi_max , 0]
-		left_trend = (A_coeff @ seg_data).T
+		left_trend = (A_coeff * seg_data).T
 
 		# mid trend
 
 		if seg_index * (seg_len - 1) + 1 + nonoverlap_len > data_len :
 			xi = np.arange(1 + (seg_index - 1) * (seg_len - 1) + nonoverlap_len , data_len + 1)
-			xi_mid = np.array([xi])
+			xi_mid = mat(xi)
 			xi_max = xi.max()
 			xi_min = xi.min()
 			seg_data = data[xi_min - 1 : xi_max , 0]
@@ -52,7 +53,7 @@ def detrending_method(data , seg_len , fit_order) :
 
 			record_x = xi_left[0 , 0 : nonoverlap_len]
 			record_y = left_trend[0 , 0 : nonoverlap_len]
-			mid_start_index = np.array([[(j) for j in range(shape(xi_mid)[1]) if xi_mid[0 , j] == xi_left[0 , shape(xi_left)[1] - 1] + 1]])
+			mid_start_index = mat([(j) for j in range(shape(xi_mid)[1]) if xi_mid[0 , j] == xi_left[0 , shape(xi_left)[1] - 1] + 1])
 			nrows_mid = shape(mid_start_index)[0]
 			mid_start_index = mid_start_index[0 , 0]
 
@@ -69,7 +70,7 @@ def detrending_method(data , seg_len , fit_order) :
 
 		else :
 			xi = np.arange(1 + (seg_index - 1) * (seg_len - 1) + nonoverlap_len , seg_index * (seg_len - 1) + nonoverlap_len + 2)
-			xi_mid = np.array([xi])
+			xi_mid = mat(xi)
 			xi_max = xi.max()
 			xi_min = xi.min()
 			seg_data = data[xi_min-1 : xi_max , 0]
@@ -80,7 +81,7 @@ def detrending_method(data , seg_len , fit_order) :
 
 			if (seg_index + 1) * (seg_len - 1) + 1 > data_len :
 				xi = np.arange(seg_index * (seg_len - 1) + 1 , data_len + 1)
-				xi_right = np.array([xi])
+				xi_right = mat(xi)
 				xi_max = xi.max()
 				xi_min = xi.min()
 				seg_data = data[xi_min - 1 : xi_max , 0]
@@ -109,7 +110,7 @@ def detrending_method(data , seg_len , fit_order) :
 				record_x = np.hstack((record_x , xi_left[0 , int((shape(xi_left)[1] + 1) / 2) - 1 : shape(xi_left)[1]] , xi_mid[0 , int((shape(xi_mid)[1] + 1) / 2) : shape(xi_mid)[1]]))
 				record_y = hstack((record_y , xx_left[0 , 0 : shape(xx_left)[1]] , xx_right[0 , 1 : shape(xx_right)[1]]))
 
-				right_start_index = np.array([[(j) for j in range(shape(xi_right)[1]) if xi_right[0 , j] == xi_mid[0 , shape(xi_mid)[1] - 1] + 1]])
+				right_start_index = mat([(j) for j in range(shape(xi_right)[1]) if xi_right[0 , j] == xi_mid[0 , shape(xi_mid)[1] - 1] + 1])
 				right_start_index =right_start_index[0 , 0]
 				record_x = hstack((record_x,xi_right[0 , right_start_index : shape(xi_right)[1]]))
 				record_y = hstack((record_y,right_trend[0 , right_start_index : shape(right_trend)[1]]))
@@ -119,7 +120,7 @@ def detrending_method(data , seg_len , fit_order) :
 
 			else :
 				xi = np.arange(seg_index * (seg_len - 1) + 1 , (seg_index + 1) * (seg_len - 1) + 2)
-				xi_right = np.array([xi])
+				xi_right = mat(xi)
 				xi_max = xi.max()
 				xi_min = xi.min()
 				seg_data = data[xi_min - 1 : xi_max,0]
@@ -146,7 +147,7 @@ def detrending_method(data , seg_len , fit_order) :
 		#left_trend
 		#seg_index = 1
 		xi = np.arange((seg_index - 1) * (seg_len - 1) + 1 , seg_index * (seg_len - 1) + 2)
-		xi_left = np.array([xi])
+		xi_left = mat(xi)
 		xi_max = xi.max()
 		xi_min = xi.min()
 		seg_data = data[xi_min - 1 : xi_max , 0]
@@ -155,7 +156,7 @@ def detrending_method(data , seg_len , fit_order) :
 		# mid trend
 
 		xi = np.arange(1 + (seg_index - 1) * (seg_len - 1) + nonoverlap_len , seg_index * (seg_len -1) + nonoverlap_len + 2)
-		xi_mid = np.array([xi])
+		xi_mid = mat(xi)
 		xi_max = xi.max()
 		xi_min = xi.min()
 		seg_data = data[xi_min - 1 : xi_max , 0]
@@ -164,7 +165,7 @@ def detrending_method(data , seg_len , fit_order) :
 		# right trend
 
 		xi = np.arange(seg_index * (seg_len - 1) + 1 , (seg_index + 1) * (seg_len - 1) + 2)
-		xi_right = np.array([xi])
+		xi_right = mat(xi)
 		xi_max = xi.max()
 		xi_min = xi.min()
 		seg_data = data[xi_min - 1 : xi_max , 0]
@@ -190,7 +191,7 @@ def detrending_method(data , seg_len , fit_order) :
 	#seg_index = 1
 
 		xi = np.arange((seg_index - 1) * (seg_len - 1) + 1 , seg_index * (seg_len - 1) + 2)
-		xi_left = np.array([xi])
+		xi_left = mat(xi)
 		xi_max = xi.max()
 		xi_min = xi.min()
 		seg_data = data[xi_min - 1 : xi_max , 0]
@@ -200,7 +201,7 @@ def detrending_method(data , seg_len , fit_order) :
 
 		if seg_index * (seg_len - 1) + 1 + nonoverlap_len > data_len :
 			xi = np.arange(1 + (seg_index - 1) * (seg_len - 1) + nonoverlap_len , data_len+ 1)
-			xi_mid = np.array([xi])
+			xi_mid = mat(xi)
 			xi_max = xi.max()
 			xi_min = xi.min()
 			seg_data = data[xi_min - 1 : xi_max , 0]
@@ -217,7 +218,7 @@ def detrending_method(data , seg_len , fit_order) :
 			xx2  =mid_trend[0 , 0 : int((seg_len + 1) / 2)]
 			w = np.arange(0 , nonoverlap_len + 1) / nonoverlap_len
 			xx_left = multiply(xx1 , (1 - w)) + multiply(xx2 , w )
-			mid_start_index = np.array([[(j) for j in range(shape(xi_mid)[1]) if xi_mid[0 , j] == xi_left[0 , shape(xi_left)[1] - 1] + 1]])
+			mid_start_index = mat([(j) for j in range(shape(xi_mid)[1]) if xi_mid[0 , j] == xi_left[0 , shape(xi_left)[1] - 1] + 1])
 			nrows_mid = shape(mid_start_index)[0]
 			mid_start_index = mid_start_index[0 , 0]
 
@@ -237,7 +238,7 @@ def detrending_method(data , seg_len , fit_order) :
 
 		else :
 			xi = np.arange(1 + (seg_index - 1) * (seg_len - 1) + nonoverlap_len , seg_index * (seg_len - 1) + nonoverlap_len + 2)
-			xi_mid = np.array([xi])
+			xi_mid = mat(xi)
 			xi_max = xi.max()
 			xi_min = xi.min()
 			seg_data = data[xi_min - 1 : xi_max , 0]
@@ -245,7 +246,7 @@ def detrending_method(data , seg_len , fit_order) :
 
 		# right trend
 		xi = np.arange(seg_index * (seg_len - 1) + 1 , data_len + 1)
-		xi_right = np.array([xi])
+		xi_right = mat(xi)
 		xi_max = xi.max()
 		xi_min = xi.min()
 		seg_data = data[xi_min - 1 : xi_max , 0]
@@ -271,7 +272,7 @@ def detrending_method(data , seg_len , fit_order) :
 		record_x = hstack((record_x , xi_left[0 , int((shape(xi_left)[1] + 3) / 2) - 1 : shape(xi_left)[1]] , xi_mid[0 , int((shape(xi_mid)[1] + 1) / 2) : shape(xi_mid)[1]]))
 		record_y = hstack((record_y , xx_left[0 , 1 : shape(xx_left)[1]] , xx_right[0 , 1 : shape(xx_right)[1]]))
 
-		right_start_index = np.array([[(j) for j in range(shape(xi_right)[1]) if xi_right[0 , j] == xi_mid[0 , shape(xi_mid)[1] - 1] + 1]])
+		right_start_index = mat([(j) for j in range(shape(xi_right)[1]) if xi_right[0 , j] == xi_mid[0 , shape(xi_mid)[1] - 1] + 1])
 		nrows_mid = shape(right_start_index)[1]
 
 		if nrows_mid == 1 :

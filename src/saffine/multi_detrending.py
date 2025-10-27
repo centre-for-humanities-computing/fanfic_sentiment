@@ -1,6 +1,7 @@
 from numpy import *
 import numpy as np
-import saffine.detrending_method as dm
+#import saffine.detrending_method as dm
+from . import detrending_method as dm
 # from numba import jit
 
 # @jit
@@ -11,11 +12,11 @@ def multi_detrending(y,step_size,q,order) :
 
 	#q = [-1 -0.1 0.1 1,2,3,4,5];
 	#step_size = 1
-	q = np.array([[q]])
+	q = mat(q)
 	len = shape(y)[1]
 	imax = int(round(log2(len)))
 	#order = 2
-	result = np.array([np.zeros((shape(q)[1] + 1 , int((imax - 2)/step_size) + 1))])
+	result = mat(np.zeros((shape(q)[1] + 1 , int((imax - 2)/step_size) + 1)))
 	k = 1
 	for i in range(1 , imax , step_size) :
 		w = int(round(2 ** i + 1))
